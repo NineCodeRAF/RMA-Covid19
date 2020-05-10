@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/FragmentTextStyle"
+        android:text="Podaci o zdravstvenom radniku"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_icon"
+        app:layout_constraintTop_toBottomOf="@+id/txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/ime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/FragmentTextStyle"
+        android:text="Ime:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"/>
+    <TextView
+        android:id="@+id/ime_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/FragmentTextStyle"
+        android:text="Nikola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ime"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"/>
+    <TextView
+        android:id="@+id/Prezime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/FragmentTextStyle"
+        android:text="Prezime:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ime_P"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"/>
+    <TextView
+        android:id="@+id/prezime_p"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/FragmentTextStyle"
+        android:text="Adamovic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Prezime"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"/>
+    <TextView
+        android:id="@+id/bolnica"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/FragmentTextStyle"
+        android:text="Bolnica:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prezime_p"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/bolnica_P"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/FragmentTextStyle"
+        android:text="Urgentni centar KCS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bolnica"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"/>
+
+    <Button
+        android:id="@+id/izmenibtn"
+        android:text="Izmeni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/odjavabtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/odjavabtn"
+        android:text="Odjava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/izmenibtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
